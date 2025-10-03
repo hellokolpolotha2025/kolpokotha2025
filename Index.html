@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>কল্পকথা - ভৌতিক গল্প</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap" rel="stylesheet">
+
+<style>
+/* Reset */
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: 'Hind Siliguri', sans-serif;
+  background: #000;
+  color: #f5f5f5;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background: #000;
+}
+
+header img { width: 100px; }
+
+header h1 {
+  font-size: 3rem;
+  color: #ff1a1a;
+  text-shadow: 0 0 10px #660000,0 0 15px #330000;
+}
+
+header p { font-size: 1.1rem; color: #ccc; margin-top: 10px; }
+
+nav { margin-top: 20px; }
+nav a {
+  color: #f5f5f5;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav a:hover { color:#e60000; text-shadow: 0 0 10px red; }
+
+/* Section */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  opacity:0;
+  transform: translateY(40px);
+  transition: all 1s ease-out;
+  background: #000;
+}
+section.visible { opacity:1; transform: translateY(0); }
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff3333;
+  text-shadow:0 0 10px #440000;
+}
+
+/* Story Cards */
+.story {
+  background: #1c1c1c;
+  padding:20px;
+  margin-bottom:25px;
+  border-left:4px solid #e60000;
+  box-shadow:0 0 12px rgba(255,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+.story:hover {
+  transform: scale(1.02);
+  box-shadow:0 0 20px rgba(255,0,0,0.6);
+}
+
+/* Contact Section (No Card, Left Aligned) */
+#contact-card {
+  background: #000;
+  padding: 40px 20px;
+  border-radius: 0;
+  box-shadow: none;
+  max-width:900px;
+  margin:50px auto;
+  text-align:left;
+}
+#contact-card h2 { color:#ff3333; text-shadow:0 0 10px #660000; margin-bottom:20px; }
+#contact-card p { margin-bottom:15px; color:#ddd; }
+#contact-card a { color:#e60000; text-decoration:none; font-weight:bold; }
+#contact-card a:hover { text-shadow:0 0 10px red; }
+
+/* Footer */
+footer {
+  text-align:center;
+  padding:30px 20px;
+  background:#000;
+  color:#777;
+  font-size:0.9rem;
+}
+footer a { margin:0 10px; color:#e60000; text-decoration:none; }
+footer a:hover { text-shadow:0 0 10px red; }
+
+/* Responsive */
+@media (max-width:768px){
+  header h1 { font-size:2.2rem; }
+  section { padding:40px 15px; }
+  #contact-card { padding:30px 20px; margin:40px 10px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <img src="logo.png" alt="কল্পকথা লোগো" />
+  <h1>কল্পকথা</h1>
+  <p>ভয়, রহস্য এবং কল্পনার এক অবিস্মরণীয় জগৎ</p>
+  <nav>
+    <a href="#about">আমাদের সম্পর্কে</a>
+    <a href="#featured">বেশি পড়া গল্প</a>
+    <a href="#recent">সাম্প্রতিক গল্প</a>
+    <a href="#contact-card">যোগাযোগ</a>
+  </nav>
+</header>
+
+<!-- About -->
+<section id="about">
+  <h2>আমাদের সম্পর্কে</h2>
+  <p><b>কল্পকথা</b> হলো এক রহস্যময় ভৌতিক গল্পের জগৎ। এখানে আপনি পাবেন গ্রামের প্রাচীন লোককথা থেকে শুরু করে শহরের অজানা অভিজ্ঞতা পর্যন্ত নানা ধরনের spine-chilling গল্প। আমাদের লক্ষ্য পাঠকদের ভয়ের অভিজ্ঞতা দেওয়া এবং গল্পের মাধ্যমে কল্পনার জগৎকে উজ্জীবিত করা।</p>
+  <p>আপনি চাইলে নিজের অভিজ্ঞতাও আমাদের সাথে ভাগ করতে পারেন। আমরা তা সতর্কভাবে যাচাই করে প্রকাশ করি, যাতে পাঠকেরা একটি নিরাপদ, কিন্তু ভৌতিক অভিজ্ঞতা পান। নতুন গল্প পড়ার সময়, আপনি অনুভব করবেন রহস্য, উত্তেজনা এবং কল্পনার এক অনন্য সংমিশ্রণ।</p>
+</section>
+
+<!-- Featured Stories -->
+<section id="featured">
+  <h2>বেশি পড়া গল্প</h2>
+  <div class="story">
+    <h3>🕯 পরিত্যক্ত স্কুলের ছায়া</h3>
+    <p>গরাত তখন প্রায় সাড়ে আটটা। শিউলি গ্রামের মাটির রাস্তা ধরে পাঁচজন কিশোর-তরুণ এগিয়ে চলেছে। অরণ্যঘেরা পথ, মাঝে মাঝে ঝোপঝাড় নড়ে উঠছে। হাওয়া আসছে কেমন যেন ঠাণ্ডা হয়ে, অথচ চারদিকে গরম ভ্যাপসা আবহাওয়া।রাহুল, দলের নেতৃত্বে, গলায় এক্সাইটমেন্ট আর ভয় মিলেমিশে বলল......বাকি গল্প জানতে ফেসবুক পেজ ভিজিট করুন !</p>
+  </div>
+</section>
+
+<!-- Recent Stories -->
+<section id="recent">
+  <h2>সাম্প্রতিক গল্প</h2>
+  <div class="story">
+    <h3>🕯 পুরোনো হাসপাতাল</h3>
+    <p>ভগ্নদশা হাসপাতালের করিডোরে শোনা যায় অদ্ভুত কান্নার আওয়াজ, যা কেউ সহজে ভুলতে পারে না।</p>
+  </div>
+  <div class="story">
+    <h3>🕯 অচেনা যাত্রী</h3>
+    <p>শেষ ট্রেনে দেখা এক অচেনা যাত্রী, পরের স্টেশনে কেউ তাকে খুঁজে পায় না।</p>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact-card">
+  <h2>যোগাযোগ</h2>
+  <p>আপনার ভৌতিক অভিজ্ঞতা, গল্প বা কল্পকাহিনী আমাদের সাথে শেয়ার করুন। আমরা তা আমাদের পাঠকদের সাথে ভাগ করব।</p>
+  <p>গল্প পাঠানোর নিয়ম: সংক্ষেপে লিখুন এবং ইমেল করুন।</p>
+  <p>✉ ইমেল: <a href="mailto:hello.kolpolotha@gmail.com">hello.kolpolotha@gmail.com</a></p>
+  <p>🔗 ফলো করুন:  
+      <a href="https://www.facebook.com/share/17GjDTuxYS/">ফেসবুক</a> | 
+      <a href="#">ইনস্টাগ্রাম</a> | 
+      <a href="#">ইউটিউব</a>
+  </p>
+</section>
+
+<footer>
+  <p>© 2025 কল্পকথা | Crafted with ♥ by Eternova Group</p>
+</footer>
+
+<script>
+// Scroll animation
+const sections=document.querySelectorAll("section");
+const reveal=()=>{ let trigger=window.innerHeight/1.2;
+sections.forEach(sec=>{ let top=sec.getBoundingClientRect().top;
+if(top<trigger) sec.classList.add("visible");});};
+window.addEventListener("scroll",reveal); reveal();
+</script>
+
+</body>
+</html>
